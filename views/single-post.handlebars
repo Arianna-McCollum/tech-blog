@@ -1,0 +1,48 @@
+{{> post-info post}}
+
+{{#if loggedIn}}
+<div class = "card">
+  <h3 class = "card-header"></h3>
+<form class="comment-form card-body">
+  <div>
+    <label class="form-label">Comment</label>
+    <textarea name="comment-body" class="form-input"></textarea>
+  </div>
+
+  <div>
+    <button type="submit" class="btn">add comment</button>
+    <button type="button" class="upvote-btn btn">upvote</button>
+  </div>
+</form>
+</div>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+{{/if}}
+
+
+{{!-- {{> post-info post}}
+
+{{#if loggedIn}}
+<div class="card">
+    <h3 class="card-header"></h3>
+    <form class="card-body comment-form" id="comment-form">
+
+        <label class="form-label">Comment</label>
+        <input id="comment" name="comment-body" class="form-input" />
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+{{/if}}
+
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}} --}}
