@@ -1,4 +1,4 @@
-#  <h1 align="center">CMS-Tech-Blog</h1>
+#  <h1 align="center">Tech-Blog</h1>
 
   ![badge](https://img.shields.io/badge/license-MIT-blue)<br>
   
